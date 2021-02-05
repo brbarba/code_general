@@ -1,7 +1,6 @@
 import os
 import smtplib
 import requests
-import env_lab
 
 EMAIL_ADDRESS = os.environ.get('EMAIL_USER')
 EMAIL_PASSWORD = os.environ.get('EMAIL_PASS')
