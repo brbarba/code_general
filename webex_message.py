@@ -4,8 +4,8 @@ import os
 # documentation at https://developer.webex.com/docs/api/v1/messages/create-a-message
 
 apiUrl = 'https://webexapis.com/v1/messages'
-access_token = os.environ.get('WEBEX_TEAMS_TOKEN')
-room_ID = os.environ.get('NOTIFY_ROOM_ID')
+access_token = os.environ['WEBEX_TEAMS_TOKEN']
+room_ID = os.environ['NOTIFY_ROOM_ID']
 email_ID = 'chtrpm_noti@webex.bot'
 
 
