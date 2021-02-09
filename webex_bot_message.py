@@ -10,7 +10,7 @@ bot_token = os.environ['CHTRPM_NOTI_BOT_TOKEN']
 email_ID = 'chtrpm_noti@webex.bot'
 
 
-httpHeaders = { 'Content-type': 'application/json', 'Authorization': 'Bearer ' + bot_token }
+httpHeaders = { 'Content-type': 'application/json', 'Authorization': 'Bearer ' + access_token }
 
 body = { 'roomId': room_ID, 'text': 'Test notification 5\nusando room_ID como variable\nFrom Bot' }
 #body = { 'toPersonEmail': email_ID, 'text': 'Bot Message from Bot' }
