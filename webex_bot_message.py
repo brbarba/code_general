@@ -12,8 +12,8 @@ email_ID = 'chtrpm_noti@webex.bot'
 
 httpHeaders = { 'Content-type': 'application/json', 'Authorization': 'Bearer ' + bot_token }
 
-#body = { 'roomId': room_ID, 'text': 'Test notification 4\nusando room_ID como variable\nFrom Pyhton' }
-body = { 'toPersonEmail': email_ID, 'text': 'Bot Message from Bot' }
+body = { 'roomId': room_ID, 'text': 'Test notification 5\nusando room_ID como variable\nFrom Bot' }
+#body = { 'toPersonEmail': email_ID, 'text': 'Bot Message from Bot' }
 
 response = requests.post( url = apiUrl, json = body, headers = httpHeaders )
 
