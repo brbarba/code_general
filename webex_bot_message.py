@@ -7,12 +7,12 @@ apiUrl = 'https://webexapis.com/v1/messages'
 access_token = os.environ['WEBEX_TEAMS_TOKEN']
 room_ID = os.environ['NOTIFY_ROOM_ID']
 bot_token = os.environ['CHTRPM_NOTI_BOT_TOKEN']
-email_ID = 'chtrpm_noti@webex.bot'
+email_ID = 'cguadarr@cisco.com'
 
 
 httpHeaders = { 'Content-type': 'application/json', 'Authorization': 'Bearer ' + access_token }
 
-body = { 'roomId': room_ID, 'text': 'Test notification 5\nusando room_ID como variable\nFrom Bot' }
+body = { 'roomId': room_ID, 'text': 'Que oinda\nando haciendo una prueba \nde un  Bot a ver si jala' }
 #body = { 'toPersonEmail': email_ID, 'text': 'Bot Message from Bot' }
 
 response = requests.post( url = apiUrl, json = body, headers = httpHeaders )
