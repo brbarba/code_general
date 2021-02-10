@@ -12,8 +12,8 @@ email_ID = 'cguadarr@cisco.com'
 
 httpHeaders = { 'Content-type': 'application/json', 'Authorization': 'Bearer ' + access_token }
 
-body = { 'roomId': room_ID, 'text': 'Que oinda\nando haciendo una prueba \nde un  Bot a ver si jala' }
-#body = { 'toPersonEmail': email_ID, 'text': 'Bot Message from Bot' }
+#body = { 'roomId': room_ID, 'text': 'Que oinda\nando haciendo una prueba \nde un  Bot a ver si jala' }
+body = { 'toPersonEmail': email_ID, 'text': 'Que oinda\nando haciendo una prueba \nde un  Bot a ver si jala' }
 
 response = requests.post( url = apiUrl, json = body, headers = httpHeaders )
 
