@@ -6,7 +6,7 @@ Device_ID = os.environ.get('Alacena_Shelly_id')
 
 url = "https://shelly-3-eu.shelly.cloud/device/relay/control/"
 
-payload={'auth_key': ,SHELLY_HOME_Token
+payload={'auth_key': SHELLY_HOME_Token,
 'turn': 'on',
 'channel': '0',
 'id': Device_ID}
