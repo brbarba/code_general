@@ -11,7 +11,7 @@ email_ID = 'gifbot@webex.bot'
 httpHeaders = { 'Content-type': 'application/json', 'Authorization': 'Bearer ' + BOT_TOKEN }
 
 #body = { 'roomId': room_ID, 'text': 'Test notification 4\nusando room_ID como variable\nFrom Pyhton' }
-body = { 'toPersonEmail': ToEmail, 'text': messages }
+body = { 'toPersonEmail': ToEmail, 'text': 'esta disponible' }
 
 response = requests.post( url = apiUrl, json = body, headers = httpHeaders )
 
