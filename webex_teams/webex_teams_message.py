@@ -15,6 +15,8 @@ body = { 'toPersonEmail': ToEmail, 'text': 'From Python' }
 
 response = requests.post( url = apiUrl, json = body, headers = httpHeaders )
 
+print(BOT_TOKEN)
+print(ToEmail)
 print( response.status_code )
 print( response.text )
 
@@ -25,10 +27,10 @@ messages = [
     '[Danger, Will Robinson!!!](https://en.wikipedia.org/wiki/Lost_in_Space#Catchphrases)'
     ]
 
-for message in messages:
+#for message in messages:
 
-    body = { 'roomId': room_ID, 'markdown': message }
-    response = requests.post( url = apiUrl, json = body, headers = httpHeaders )
+#    body = { 'roomId': room_ID, 'markdown': message }
+#    response = requests.post( url = apiUrl, json = body, headers = httpHeaders )
 
-    print( response.status_code )
-    print( response.text )
+#    print( response.status_code )
+#    print( response.text )
