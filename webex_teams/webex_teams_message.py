@@ -1,7 +1,7 @@
 import requests
 import os
 
-BOT_TOKEN = os.environ.get('WEBEX_TEAMS_TOKEN')
+BOT_TOKEN = os.environ.get('People_ready_bot_TOKEN')
 ToEmail = 'brbarba@cisco.com'
 
 apiUrl = 'https://webexapis.com/v1/messages'
