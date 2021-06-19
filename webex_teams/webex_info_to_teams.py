@@ -27,7 +27,7 @@ message = name + ' tiene como status ' + status
 print('\n')
 print(message)
 
-body = { 'toPersonEmail': ToEmail, 'text': 'esta disponible' }
+body = { 'toPersonEmail': ToEmail, 'text': message }
 
 response_post = requests.post( url = apiUrl, json = body, headers = httpHeaders )
 
