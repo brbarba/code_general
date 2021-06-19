@@ -19,6 +19,8 @@ headers = {
   'Authorization': 'Bearer ' + BOT_TOKEN }
 
 def get_status():
+    global name
+    global status
     response = requests.request("GET", url, headers=headers, data=payload)
     json_data = json.loads(response.text)
     name = response.json()["items"][0]["displayName"]
@@ -38,7 +40,6 @@ print(url)
 get_status()
 
 post_message(status)
-
 
 #print(BOT_TOKEN)
 #print(ToEmail)
