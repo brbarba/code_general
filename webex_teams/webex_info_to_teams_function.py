@@ -18,6 +18,9 @@ payload={}
 headers = {
   'Authorization': 'Bearer ' + BOT_TOKEN }
 
+text_in1 = ' tiene como status\n'
+text_in2 = ' ya esta disponible con status\n'
+
 def get_status():
     global name
     global status
@@ -26,8 +29,8 @@ def get_status():
     name = response.json()["items"][0]["displayName"]
     status = response.json()["items"][0]["status"]
 
-def post_message(status_post):
-    message = name + ' tiene como status \n' + status_post
+def post_message(status_post, text_inside):
+    message = name + text_inside + status_post
     body = { 'toPersonEmail': ToEmail, 'text': message }
     response_post = requests.post( url = apiUrl, json = body, headers = httpHeaders )
 
@@ -39,7 +42,7 @@ print(url)
 
 get_status()
 
-post_message(status)
+post_message(status, text_in1)
 
 #print(BOT_TOKEN)
 #print(ToEmail)
