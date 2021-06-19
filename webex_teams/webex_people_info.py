@@ -11,9 +11,11 @@ headers = {
 print(url)
 response = requests.request("GET", url, headers=headers, data=payload)
 json_data = json.loads(response.text)
+name = response.json()["items"][0]["displayName"]
+status = response.json()["items"][0]["status"]
 print('\n')
 print(response.text)
 print('\n')
-print(json_data)
+print(json.dumps(json_data, indent = 4, sort_keys=True))
 print('\n')
-print(json_data['displayName'])
+print(namm + ' con status ' + status)
