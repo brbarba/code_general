@@ -28,9 +28,10 @@ def post_message(status_post):
     message = name + ' tiene como status \n' + status_post
     body = { 'toPersonEmail': ToEmail, 'text': message }
     response_post = requests.post( url = apiUrl, json = body, headers = httpHeaders )
-    print('\n')
-    print(message)
-    print( response_post.status_code )
+
+#    print('\n')
+#    print(message)
+#    print( response_post.status_code )
 
 print(url)
 
