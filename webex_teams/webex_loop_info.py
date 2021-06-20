@@ -49,6 +49,6 @@ post_message(status, text_in1)
 while status != 'active':
     get_status()
     time.sleep(60)
-    print(polling)
+    print('polling user')
 else:
     post_message(status, text_in2)
