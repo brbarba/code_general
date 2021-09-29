@@ -5,6 +5,8 @@ import os
 BOT_TOKEN = os.getenv('People_ready_bot_TOKEN')
 ToEmail = 'brbarba@cisco.com'
 
+text = 'La VM de linux Centos8 esta iniciando\nverificar posible power outage'
+
 apiUrl = 'https://webexapis.com/v1/messages'
 access_token = 'replace with your_access_token'
 room_ID = 'replace with your room ID'
@@ -12,7 +14,7 @@ email_ID = 'gifbot@webex.bot'
 httpHeaders = { 'Content-type': 'application/json', 'Authorization': 'Bearer ' + BOT_TOKEN }
 
 def post_message():
-    message = 'La VM de linux Centos8 esta iniciando\nverificar posible power outage'
+    message = text
     body = { 'toPersonEmail': ToEmail, 'text': message }
     response_post = requests.post( url = apiUrl, json = body, headers = httpHeaders )
 
